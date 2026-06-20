@@ -25,7 +25,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           mkdir -p dist
-          mv main.pdf dist/Luke_Trusheim_Resume.pdf
+          mv build/main.pdf dist/Luke_Trusheim_Resume.pdf
           git add dist/Luke_Trusheim_Resume.pdf
           git diff --cached --quiet || git commit -m "Update compiled resume PDF [skip ci]"
           git push
